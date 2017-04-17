@@ -6,6 +6,7 @@ An implementation of functions for the creation of fake customer test data in Fa
 1) Download the package zip. Open and find the files -
 
 FakerNETExcel-AddIn-packed.xll
+
 FakerNETExcel-AddIn64-packed.xll
 
 2) Open Excel 2013 or later. Create a new sheet.
