@@ -1,0 +1,3 @@
+[submodule "libs/Faker.NET"]
+	path = libs/Faker.NET
+	url = git://github.com/PaulWaltersDev/Faker.Net.git

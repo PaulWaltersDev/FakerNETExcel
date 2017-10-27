@@ -54,7 +54,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\github_projects\Faker.NET\Faker.Net\Faker.Net.csproj">
+    <ProjectReference Include="..\libs\Faker.NET\Faker.Net\Faker.Net.csproj">
       <Project>{f4e27022-496c-48e5-8986-f68355c2ecb3}</Project>
       <Name>Faker.Net</Name>
     </ProjectReference>

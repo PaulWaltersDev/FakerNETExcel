@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakerNETExcel", "FakerNETExcel\FakerNETExcel.csproj", "{2ED0A263-FD7F-4FA2-AFB1-CD454264B1F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Net", "..\..\..\..\github_projects\Faker.NET\Faker.Net\Faker.Net.csproj", "{F4E27022-496C-48E5-8986-F68355C2ECB3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Net", "libs\Faker.NET\Faker.Net\Faker.Net.csproj", "{F4E27022-496C-48E5-8986-F68355C2ECB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
