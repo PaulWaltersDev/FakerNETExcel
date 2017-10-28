@@ -52,6 +52,7 @@ The following Excel functions have been implemented in the current Faker.NET rel
 <li>Faker_Email() - Returns a randomly selected Email.</li>
 <li>Faker_Phone() - Returns a randomly selected (US Format) Phone.</li>
 <li>Faker_UserName() - Returns a randomly selected internet username.</li>
+<li>Faker_CreditCard() - Returns a credit card number. Enter in types VISA, MASTERCARD or DINERSCLUB. VISA is default.</li>
 </ul>
 
 
