@@ -31,17 +31,14 @@ namespace FakerNETExcel
             return Faker.Name.GetName();
         }
 
-        [ExcelFunction(Description = "Returns a randomly selected StreetAddress")]
-        public static string Faker_StreetAddress()
+        [ExcelFunction(Description = "Returns a randomly selected StreetAddress, along with a secondary address if 'true' passed in.")]
+        public static string Faker_StreetAddress(Object SecondaryAddress = null)
         {
-            return Faker.Address.GetStreetAddress();
+            if (SecondaryAddress == null)
+                return Faker.Address.GetStreetAddress();
+            return Faker.Address.GetStreetAddress(SecondaryAddress is ExcelMissing ? false : (bool)SecondaryAddress);
         }
 
-        [ExcelFunction(Description = "Returns a randomly selected StreetAddress. Pass parameter True if a secondary address to be returned.")]
-        public static string Faker_StreetAddress(bool IncludeSecondary)
-        {
-            return Faker.Address.GetStreetAddress(IncludeSecondary);
-        }
 
         [ExcelFunction(Description = "Returns a randomly selected StreetName.")]
         public static string Faker_StreetName()
@@ -152,35 +149,28 @@ namespace FakerNETExcel
         }
 
         [ExcelFunction(Description = "Returns a randomly created email. To base the email on a name, add name as parameter.")]
-        public static string Faker_Email(string name)
+        public static string Faker_Email(Object name = null)
         {
-            return Faker.Internet.GetEmail(name);
-        }
-
-        [ExcelFunction(Description = "Returns a randomly created email. To base the email on a name, add name as parameter.")]
-        public static string Faker_Email()
-        {
-            return Faker_Email();
+	        return Faker.Internet.GetEmail(name is ExcelMissing ? null: (string)name);
         }
 
         [ExcelFunction(Description = "Returns a randomly created (US format) Phone Number.")]
         public static string Faker_Phone()
         {
-            return Faker.PhoneNumber.GetUSPhoneNumber();
+	        return Faker.PhoneNumber.GetUSPhoneNumber();
         }
 
         [ExcelFunction(Description = "Returns a randomly created internet username. To base it on a name, add name as parameter.")]
-        public static string Faker_UserName(string name = null)
+        public static string Faker_UserName(Object name = null)
         {
-            return Faker.Internet.GetUserName(name);
+        	return Faker.Internet.GetUserName(name is ExcelMissing ? null : (string)name);
         }
 
-        [ExcelFunction(Description = "Returns a randomly created internet username. To base it on a name, add name as parameter.")]
-        public static string Faker_UserName()
+        [ExcelFunction(Description = "Returns a credit card number. Enter in types VISA, MASTERCARD or DINERSCLUB. VISA is default.")]
+        public static string Faker_CreditCard(Object type = null)
         {
-            return Faker_UserName();
+            return Faker.CreditCard.CreditCardNumber(type is ExcelMissing ? "VISA" : (string)type);
         }
-
 
     }
 }

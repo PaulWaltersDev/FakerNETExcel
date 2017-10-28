@@ -1,5 +1,5 @@
 <DnaLibrary Name="FakerNETExcel Add-In" RuntimeVersion="v4.0">
-  <ExternalLibrary Path="FakerNETExcel.dll" LoadFromBytes="true" Pack="true" ExplicitRegistration='true'/>
+  <ExternalLibrary Path="FakerNETExcel.dll" LoadFromBytes="true" Pack="true" />
   
   <!-- 
        The RuntimeVersion attribute above allows two settings:
