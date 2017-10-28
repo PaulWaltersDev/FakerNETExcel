@@ -170,7 +170,7 @@ namespace FakerNETExcel
         }
 
         [ExcelFunction(Description = "Returns a randomly created internet username. To base it on a name, add name as parameter.")]
-        public static string Faker_UserName(string name)
+        public static string Faker_UserName(string name = null)
         {
             return Faker.Internet.GetUserName(name);
         }
