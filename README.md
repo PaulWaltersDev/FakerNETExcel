@@ -1,3 +1,4 @@
+
 # FakerNETExcel
 An implementation of functions for the creation of fake customer test data in Faker.NET (https://www.nuget.org/packages/Faker.Net) to Excel 2013 (as an XLL add-in) and later. Useful when customer production data is banned or inaccessible and the manual creation of customer data is too laborious.
 
@@ -35,6 +36,11 @@ The following Excel functions have been implemented in the current Faker.NET rel
 <li>Faker_StreetAddress(bool) - Returns a randomly selected StreetAddress. Pass parameter True if a secondary address to be returned.</li>
 <li>Faker_StreetSuffix() - Returns a randomly selected Street Suffix</li>
 <li>Faker_Country() - Returns a randomly selected Country</li>
+<li>Faker_AusTown() - Returns a randomly selected Australian town or city</li>
+<li>Faker_AusState() - Returns a randomly selected Australian state (full name)</li>
+<li>Faker_AusPostcode() - Returns a randomly created Australian postcode (defined as four random digits)</li>
+<li>Faker_AusPhoneNumber() - Returns a randomly created Australian phone/mobile number of various formats</li>
+<li>Faker_AusUniversity() - Returns a randomly created Australian university of various formats</li>
 <li>Faker_USState() - Returns a randomly selected US State.</li>
 <li>Faker_USStateAbbr() - Returns a randomly selected, abbreviated US State.</li>
 <li>Faker_USZipCode() - Returns a randomly selected US Zip Code.</li>
