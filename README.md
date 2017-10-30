@@ -1,6 +1,7 @@
-
 # FakerNETExcel
 An implementation of functions for the creation of fake customer test data in Faker.NET (https://www.nuget.org/packages/Faker.Net) to Excel 2013 (as an XLL add-in) and later. Useful when customer production data is banned or inaccessible and the manual creation of customer data is too laborious.
+
+This was updated for a presentation on creating test data and fuzzing at Australian Testing Days 2017, for which the slides can be found at - https://docs.google.com/presentation/d/1QpGhI0LUQslqSE-iO2DjbGb-3hxd5U8Mpf5kLmgi2RE/edit?usp=sharing.
 
 <h2>Installation</h2>
 
